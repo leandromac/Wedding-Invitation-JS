@@ -2,21 +2,43 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Você é nosso convidado para celebrar conosco!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <!--
     <link href="css/fontawesome/all.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
   -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-</div>icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <title>Convite de Casamento</title>
 </head>
 <body>
 
   <div class="container">
 
+    <div class="alert alert-success text-center" role="alert" style="display: none; margin-top: 10px">
+      Confirmação de <strong class="guestName"></strong> feita com sucesso!
+    </div>
+
     <div class="text-center">
-      <p style="text-decoration: underline">VOCÊ É NOSSO CONVIDADO PARA CELEBRAR CONOSCO</p>
+      <h5 style="text-decoration: underline; margin-top: 20px; color: #624746">VOCÊ É NOSSO CONVIDADO PARA <br> <strong>O NOSSO CASAMENTO!</strong></h5>
       <h1 class="couple">Thaís & Leandro</h1>
       <div class="info">
         <h5 class="day"><i style="font-size:20px" class="fas fas-1x fa-calendar-alt"></i> 13 de Janeiro de 2021</h5>
@@ -26,7 +48,7 @@
       <p class="text-center">
         <!-- Button trigger modal -->
         <button type="button" class="btn btnConfirm btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
-          <i class="fas fa-calendar-check"></i> confirmar presença
+          <i class="fas fa-calendar-check"></i> confirmar
         </button>
         <button type="button" class="btn btnGift btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
           <i class="fas fa-hand-holding-heart"></i> presentear
@@ -47,7 +69,9 @@
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">
           <span class="titleConfirm" style="display:none"><i class="fas fa-calendar-check"></i> Confirmar minha presença</span>
-          <span class="titleGift" style="display:none"><i class="fas fa-hand-holding-heart"></i> Presentear</span>
+          <span class="titleGift" style="display:none"><i class="fas fa-hand-holding-heart"></i> Presentear <br>
+          <small class="subtitleGift">Presenteie-nos com um valor qualquer.</small>
+          </span>
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -79,7 +103,6 @@
               <strong>Agência:</strong> 0080<br>
               <strong>Conta Poupança:</strong> 00118682-3<br>
             </p>
-            <hr>
           </span>
         </div>
         <div class="modal-footer" style="display:none">
