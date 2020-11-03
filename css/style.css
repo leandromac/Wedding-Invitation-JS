@@ -1,10 +1,14 @@
 body {
-  background-color: #fff5ed !important
+  background: url('../img/bg.webp') #fff5ed fixed no-repeat !important;
+  background-size: 50% auto !important;
+  background-position-y: 100% !important
 }
 
 .btn-outline-secondary {
+  background-color: #fff5ed !important;
   color: #9a6d6c !important;
   border-color: #9a6d6c !important;
+  font-family: 'Satisfy', cursive !important
 }
 
 .btn-outline-secondary:hover {
@@ -16,7 +20,8 @@ body {
 .btn-secondary {
   background-color: #9a6d6c !important;
   color: #fff !important;
-  border-color: #9a6d6c !important
+  border-color: #9a6d6c !important;
+  font-family: 'Satisfy', cursive !important
 }
 
 .btn-secondary:hover {
@@ -32,7 +37,8 @@ body {
 .couple {
   font-family: 'Pacifico', cursive;
   font-size: 4em;
-  color: #9a6d6c
+  color: #9a6d6c;
+  margin-top: 50px
 }
 
 .day, .time, .local {
@@ -47,4 +53,9 @@ body {
 
 .modal-title {
   color: #9a6d6c
+}
+
+.info {
+  margin: 50px 0 50px 0;
+
 }
