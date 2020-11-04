@@ -7,8 +7,6 @@
   const bodyGift = document.querySelector('.bodyGift')
   const modalFooter = document.querySelector('.modal-footer')
 
-  console.log(e)
-
   $('#btn-submit').click(e => {
     e.preventDefault()
     firebase.database().ref("/" + Math.floor(Math.random() * 50)).set({
@@ -52,16 +50,16 @@
     setInterval(() => {
       $('.alert').hide(1000)
     }, 8000)
-    setTimeout(() => {
-      schedule()
-    }, 9000)
+    // setTimeout(() => {
+    //   schedule()
+    // }, 9000)
   }
 
-  function schedule() {
-    let a = document.createElement('a')
-    a.href = 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MXJzNXBzNGdrNGN0NG4zNHRkaTQ0NG44ZGMgbmFuZG9mbWFjZWRvQG0&tmsrc=nandofmacedo%40gmail.com'
-    a.target = '_blank'
-    a.click()
-  }
+  // function schedule() {
+  //   let a = document.createElement('a')
+  //   a.href = 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MXJzNXBzNGdrNGN0NG4zNHRkaTQ0NG44ZGMgbmFuZG9mbWFjZWRvQG0&tmsrc=nandofmacedo%40gmail.com'
+  //   a.target = '_blank'
+  //   a.click()
+  // }
 
 })()

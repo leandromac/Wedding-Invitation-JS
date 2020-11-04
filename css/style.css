@@ -47,6 +47,22 @@ body {
   color: #e4bcba
 }
 
+.textDestak {
+  font-family: 'Satisfy', cursive;
+  font-size: 29px
+}
+
+.citacao {
+  font-family: 'Verdana';
+  font-size: 16px;
+  float: right
+}
+
+.invite {
+  font-family: 'Open Sans', sans-serif;
+  color: #9a6d6c;
+}
+
 .modal-title {
   font-family: 'Pacifico', cursive
 }
