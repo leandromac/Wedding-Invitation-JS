@@ -1,7 +1,30 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   body {
-    background-position-y: 91% !important
+    background: #fff5ed !important
+  }
+  .bg-top {
+    background: url('../img/bg-top.png') fixed no-repeat;
+    background-size: 50% auto !important;
+    background-position-x: 100% !important;
+    margin-top: -50px
+  }
+  .bg-bottom {
+    background: url('../img/bg-bottom.png') fixed no-repeat;
+    background-size: 50% auto !important;
+    background-position-y: 89% !important;
+    margin-top: -50px
+  }
+  .textDestak {
+    padding-top: 90px;
+    width: 60%;
+    text-align: left;
+    font-size: 21px
+  }
+  .citacao {
+    font-size: 10px;
+    float: none;
+    text-align: left
   }
   .mobile {
     display: block;
@@ -17,11 +40,19 @@
     margin-top: 60px
   }
   .invite {
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 10px
   }
   .info {
-    margin: 60px 0 0 0
+    margin: 60px 0 170px 0
+  }
+  .mobile .btn {
+    padding: 10px
+  }
+  .alert {
+    margin-top: 50% !important;
+    position: absolute;
+    width: 92%
   }
 }
 

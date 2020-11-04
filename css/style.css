@@ -49,7 +49,9 @@ body {
 
 .textDestak {
   font-family: 'Satisfy', cursive;
-  font-size: 29px
+  font-size: 29px;
+  color: #9a6d6c;
+  margin-top: 20px
 }
 
 .citacao {
@@ -60,19 +62,17 @@ body {
 
 .invite {
   font-family: 'Open Sans', sans-serif;
-  color: #9a6d6c;
+  color: #9a6d6c
 }
 
 .modal-title {
-  font-family: 'Pacifico', cursive
-}
-
-.modal-title {
+  font-family: 'Pacifico', cursive;
+  text-align: justify;
   color: #9a6d6c
 }
 
 .info {
-  margin: 50px 0 50px 0;
+  margin: 50px 0 50px 0
 
 }
 

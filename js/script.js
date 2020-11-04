@@ -49,17 +49,7 @@
     $('.alert').show(1000)
     setInterval(() => {
       $('.alert').hide(1000)
-    }, 8000)
-    // setTimeout(() => {
-    //   schedule()
-    // }, 9000)
+    }, 5000)
   }
-
-  // function schedule() {
-  //   let a = document.createElement('a')
-  //   a.href = 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MXJzNXBzNGdrNGN0NG4zNHRkaTQ0NG44ZGMgbmFuZG9mbWFjZWRvQG0&tmsrc=nandofmacedo%40gmail.com'
-  //   a.target = '_blank'
-  //   a.click()
-  // }
 
 })()
