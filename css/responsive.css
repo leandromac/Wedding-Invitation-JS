@@ -54,6 +54,9 @@
     position: absolute;
     width: 92%
   }
+  .btn-group-lg > .btn, .btn-lg {
+    line-height: 1 !important;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -111,6 +114,9 @@
     margin-top: 50% !important;
     position: absolute;
     width: 92%
+  }
+  .btn-group-lg > .btn, .btn-lg {
+    line-height: 1 !important;
   }
 }
 

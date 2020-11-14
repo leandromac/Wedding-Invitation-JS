@@ -7,7 +7,7 @@ body {
 .btn-outline-secondary {
   background-color: #fff5ed !important;
   color: #9a6d6c !important;
-  border-color: #9a6d6c !important;
+  border: none !important;
   font-family: 'Satisfy', cursive !important
 }
 
