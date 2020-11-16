@@ -37,6 +37,18 @@
     showItem(bodyGift)
   })
 
+  let turnOnOf = false
+  $('.btn-galery').click(e=> {
+    e.preventDefault()
+    turnOnOf = !turnOnOf
+    if(turnOnOf == true) {
+        $('.galery').fadeIn(1000)
+    }
+    if(turnOnOf == false) {
+        $('.galery').fadeOut(1000)
+    }
+  })
+
   function showItem(item) {
     item.style.display = 'block'
   }
