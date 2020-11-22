@@ -6,6 +6,13 @@
   .galery {
     margin-top: -150px;
   }
+  .thumb-horizontal {
+    width: 100%
+  }
+  
+  .thumb-vertical {
+    width: 100%
+  }
   .bg-top {
     background: url('../img/bg-top.png') fixed no-repeat;
     background-size: 50% auto !important;
