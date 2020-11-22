@@ -89,3 +89,15 @@ body {
 .navbar {
   background-color: #fff5ed !important
 }
+
+.thumb-horizontal {
+  width: 20%
+}
+
+.thumb-vertical {
+  width: 14%
+}
+
+.example-image {
+  margin: 3px
+}
