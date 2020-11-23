@@ -25,6 +25,7 @@
     e.preventDefault()
     hideItem(titleGift)
     hideItem(bodyGift)
+    hideItem(bodyGallery)
     showItem(titleConfirm)
     showItem(bodyConfirm)
     showItem(modalFooter)
@@ -34,18 +35,38 @@
     e.preventDefault()
     hideItem(titleConfirm)
     hideItem(bodyConfirm)
+    hideItem(bodyGallery)
     hideItem(modalFooter)
     showItem(titleGift)
     showItem(bodyGift)
   })
 
+  let arrImages = [
+    'foto-1',
+    'foto-2',
+    'foto-3',
+    'foto-4',
+    'foto-5'
+  ]
+
+  function stories() {
+    let images = arrImages.map(e => {
+      return `<div><img class="example-image" src="img/gallery/${e}.jpg" style="width: 100%" alt="" /></div>`
+    })
+    $('.bodyGallery').append(images)
+  }
+
   $('.btn-galery').click(e => {
     e.preventDefault()
+    $('.slick-next').click()
     hideItem(modalHeader)
     hideItem(titleConfirm)
     hideItem(bodyConfirm)
+    hideItem(bodyGift)
+    hideItem(bodyConfirm)
     hideItem(modalFooter)
     showItem(bodyGallery)
+    stories()
   })
 
   // let turnOnOf = false
