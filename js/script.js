@@ -1,10 +1,12 @@
 (function(){
   'use strict'
 
+  const modalHeader = document.querySelector('.modal-header')
   const titleConfirm = document.querySelector('.titleConfirm')
   const titleGift = document.querySelector('.titleGift')
   const bodyConfirm = document.querySelector('.bodyConfirm')
   const bodyGift = document.querySelector('.bodyGift')
+  const bodyGallery = document.querySelector('.bodyGallery')
   const modalFooter = document.querySelector('.modal-footer')
 
   $('#btn-submit').click(e => {
@@ -37,17 +39,26 @@
     showItem(bodyGift)
   })
 
-  let turnOnOf = false
-  $('.btn-galery').click(e=> {
+  $('.btn-galery').click(e => {
     e.preventDefault()
-    turnOnOf = !turnOnOf
-    if(turnOnOf == true) {
-        $('.galery').fadeIn(1000)
-    }
-    if(turnOnOf == false) {
-        $('.galery').fadeOut(1000)
-    }
+    hideItem(modalHeader)
+    hideItem(titleConfirm)
+    hideItem(bodyConfirm)
+    hideItem(modalFooter)
+    showItem(bodyGallery)
   })
+
+  // let turnOnOf = false
+  // $('.btn-galery').click(e=> {
+  //   e.preventDefault()
+  //   turnOnOf = !turnOnOf
+  //   if(turnOnOf == true) {
+  //       $('.galery').fadeIn(1000)
+  //   }
+  //   if(turnOnOf == false) {
+  //       $('.galery').fadeOut(1000)
+  //   }
+  // })
 
   function showItem(item) {
     item.style.display = 'block'
