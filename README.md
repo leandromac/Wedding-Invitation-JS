@@ -1,3 +1,3 @@
-# Wedding Invitation using jQuery
+# Web Wedding Invitation using jQuery
 
-## [See demo](https://leandromacedo.com/convite)
+## [See invitation](https://leandromacedo.com/convite)
