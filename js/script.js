@@ -41,9 +41,9 @@
     showItem(bodyGift)
   })
 
-  function stories() {
+  const stories = () => {
     let arrImages = ['foto-1','foto-2','foto-3','foto-4','foto-5']
-    let images = arrImages.map( e => {
+    let images = arrImages.map(e => {
       return `<div class="${e}"><img class="example-image" src="img/gallery/${e}.jpg" style="width: 100%" alt="" /></div>`
     })
     $('.bodyGallery').append(images)
@@ -65,27 +65,15 @@
     stories()
   })
 
-  // let turnOnOf = false
-  // $('.btn-galery').click(e=> {
-  //   e.preventDefault()
-  //   turnOnOf = !turnOnOf
-  //   if(turnOnOf == true) {
-  //       $('.galery').fadeIn(1000)
-  //   }
-  //   if(turnOnOf == false) {
-  //       $('.galery').fadeOut(1000)
-  //   }
-  // })
-
-  function showItem(item) {
+  const showItem = item => {
     item.style.display = 'block'
   }
 
-  function hideItem(item) {
+  const hideItem = item => {
     item.style.display = 'none'
   }
 
-  function notification() {
+  const notification = () => {
     $('.alert').show(1000)
     setInterval(() => {
       $('.alert').hide(1000)
