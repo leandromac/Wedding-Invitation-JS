@@ -1,3 +1,3 @@
-# Wedding-Invitation-JS
+# Wedding Invitation using jQuery
 
-## Demo: [https:leandromacedo.com/convite]
+## [Demo](https:leandromacedo.com/convite)
