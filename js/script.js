@@ -1,20 +1,22 @@
 (function(){
   'use strict'
 
-  const modalHeader = document.querySelector('.modal-header')
-  const titleConfirm = document.querySelector('.titleConfirm')
-  const titleGift = document.querySelector('.titleGift')
-  const bodyConfirm = document.querySelector('.bodyConfirm')
-  const bodyGift = document.querySelector('.bodyGift')
-  const bodyGallery = document.querySelector('.bodyGallery')
-  const modalFooter = document.querySelector('.modal-footer')
+  const modalHeader = $('.modal-header')
+  const titleConfirm = $('.titleConfirm')
+  const titleGift = $('.titleGift')
+  const bodyConfirm = $('.bodyConfirm')
+  const bodyGift = $('.bodyGift')
+  const bodyGallery = $('.bodyGallery')
+  const modalFooter = $('.modal-footer')
+  const close = $('.close')
 
   $('#btn-submit').click(e => {
     e.preventDefault()
+    hideItem(close)
     firebase.database().ref("/" + Math.floor(Math.random() * 50)).set({
       name: $('#name').val()
     })
-    $('.close').click()
+    close.click()
     notification()
     let name = $('#name').val()
     $('.guestName').text(name)
@@ -23,9 +25,11 @@
                   
   $('.btnConfirm').click(e => {
     e.preventDefault()
+    hideItem(close)
     hideItem(titleGift)
     hideItem(bodyGift)
     hideItem(bodyGallery)
+    showItem(modalHeader)
     showItem(titleConfirm)
     showItem(bodyConfirm)
     showItem(modalFooter)
@@ -33,6 +37,7 @@
 
   $('.btnGift').click(e => {
     e.preventDefault()
+    hideItem(close)
     hideItem(titleConfirm)
     hideItem(bodyConfirm)
     hideItem(bodyGallery)
@@ -66,11 +71,11 @@
   })
 
   const showItem = item => {
-    item.style.display = 'block'
+    item.css('display', 'block')
   }
 
   const hideItem = item => {
-    item.style.display = 'none'
+    item.css('display', 'none')
   }
 
   const notification = () => {
