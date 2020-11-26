@@ -37,7 +37,7 @@
 
   $('.btnGift').click(e => {
     e.preventDefault()
-    hideItem(close)
+    showItem(close)
     hideItem(titleConfirm)
     hideItem(bodyConfirm)
     hideItem(bodyGallery)
@@ -75,6 +75,7 @@
     hideItem(bodyGift)
     hideItem(bodyConfirm)
     hideItem(modalFooter)
+    showItem(close)
     showItem(bodyGallery)
     stories()
   })
