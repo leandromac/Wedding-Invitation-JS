@@ -48,8 +48,9 @@
 
   const stories = () => {
     let arrImages = [
-      'foto-1','foto-2','foto-3','foto-4','foto-5', 'foto-6', 'foto-7', 'foto-8', 'foto-9', 'foto-10', 'foto-11', 'foto-12',
-      'foto-13', 'foto-14', 'foto-15', 'foto-16', 'foto-17', 'foto-18', 'foto-19', 'foto-20', 'foto-21', 'foto-22', 'foto-23'
+      'foto-1','foto-2','foto-3','foto-4','foto-5', 'foto-6', 'foto-7', 'foto-8', 'foto-9',
+      'foto-10', 'foto-11', 'foto-12', 'foto-13', 'foto-14', 'foto-15', 'foto-16', 'foto-17',
+      'foto-18', 'foto-19', 'foto-20', 'foto-21', 'foto-22', 'foto-23', 'foto-24'
     ]
     let images = arrImages.map(e => {
       return `<div class="${e}"><img class="example-image" src="img/gallery/${e}.jpg" style="width: 100%" alt="" /></div>`
@@ -58,6 +59,11 @@
     arrImages.forEach(e => {
       !!$(`.${e}`)[1] === false ? '' : $(`.${e}`)[1].remove()
     })
+    let p = document.createElement('p')
+    p.className = 'photographer'
+    p.innerHTML = `<small>Fotógrafo: <a href="https://instagram.com/oxtiago?igshid=mkblmiiynmfw" target="_blank">@oxtiago</a></small>`
+    $('.bodyGallery').append(p)
+    !!$('.photographer')[1] === false ? '' : $('.photographer')[1].remove()
   }
 
   $('.btn-galery').click(e => {
