@@ -13,7 +13,7 @@
   $('#btn-submit').click(e => {
     e.preventDefault()
     hideItem(close)
-    firebase.database().ref("/" + Math.floor(Math.random() * 50)).set({
+    firebase.database().ref("/" + Math.floor(Math.random() * 100)).set({
       name: $('#name').val()
     })
     close.click()
