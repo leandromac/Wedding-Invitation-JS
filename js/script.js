@@ -10,12 +10,15 @@
   const modalFooter = $('.modal-footer')
   const close = $('.close')
 
-  const limit = 'Mon Dez 21 2020 0:00:01 GMT-0300 (Horário Padrão de Brasília)'
-  setInterval(()=>{
-    if(Date() >= limit) {
+  const limit = 'Mon Dec 21 2020 00:00:00 GMT-0300 (Horário Padrão de Brasília)'
+  setInterval(() => {
+    if(limit >= Date()) {
       $('.btnConfirm').css('display', 'none')
     }
-  }, 10000)
+    else {
+      $('.btnConfirm').css('display', 'inline')
+    }
+  }, 0)
 
   $('#btn-submit').click(e => {
     e.preventDefault()
