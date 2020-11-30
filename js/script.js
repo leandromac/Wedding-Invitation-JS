@@ -10,6 +10,13 @@
   const modalFooter = $('.modal-footer')
   const close = $('.close')
 
+  const limit = 'Mon Dez 21 2020 0:00:01 GMT-0300 (Horário Padrão de Brasília)'
+  setInterval(()=>{
+    if(Date() >= limit) {
+      $('.btnConfirm').css('display', 'none')
+    }
+  }, 10000)
+
   $('#btn-submit').click(e => {
     e.preventDefault()
     hideItem(close)
