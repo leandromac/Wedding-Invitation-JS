@@ -1,4 +1,4 @@
-(function(){
+{
   'use strict'
 
   const modalHeader = $('.modal-header')
@@ -105,4 +105,4 @@
     }, 5000)
   }
 
-})()
+}
